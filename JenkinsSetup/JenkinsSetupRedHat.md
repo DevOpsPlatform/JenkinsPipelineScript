@@ -2,6 +2,8 @@
 
 **Install Java**:
 
+    sudo yum update -y
+
     #sudo yum install epel-release java-1.8.0-openjdk-devel -y
     
     sudo yum install epel-release java-11-openjdk-devel -y
