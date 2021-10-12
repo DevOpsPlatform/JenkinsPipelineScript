@@ -38,8 +38,8 @@
   
   From here, follow the steps from the section "Setup Jenkins": 
   
+  https://github.com/DevOpsPlatform/JenkinsPipelineScript/blob/main/JenkinsSetup/JenkinsSetupUbuntu.md
   
-  https://github.com/DevOpsOnlineTraining-2021/Jenkins/blob/master/JenkinsSetup/JenkinsSetupUbuntu.md
   
   
     
