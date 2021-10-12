@@ -65,6 +65,6 @@
 
 Launch the URL in any browser: http://localhost:8080 or http://{public-ip-address}:8080
 
-From here, follow the same steps from the section "Setup Jenkins":  https://github.com/DayToDayDevOpsCourse/JenkinsDayToDayCourse/blob/master/JenkinsSetupUbuntu.md
+From here, follow the same steps from the section "Setup Jenkins":  https://github.com/DevOpsPlatform/JenkinsPipelineScript/blob/main/JenkinsSetup/JenkinsSetupUbuntu.md
 
 ![image](https://user-images.githubusercontent.com/24622526/98761868-a4cffe00-23d6-11eb-8637-8323403e6056.png)
