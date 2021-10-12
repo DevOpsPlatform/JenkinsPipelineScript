@@ -10,7 +10,7 @@
     
     #If epel-release package is not installed, use below command to install.
     
-    #yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+    #sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
     
     
     java -version
