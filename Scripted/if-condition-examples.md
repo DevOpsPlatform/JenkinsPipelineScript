@@ -25,3 +25,17 @@
       }
     }
 
+### Script-3
+
+    node{
+        stage("build"){
+            echo "build stage"
+        }
+        stage('Testing on linux') {
+            if (isUnix()) {
+                sh "echo yes, its Unix/Linux family"
+            }else{
+                bat "echo its windows"
+            }
+        }
+    }
