@@ -5,13 +5,13 @@
             echo "build stage"
         }
         stage('Test') {
-            parallel 'linux': {
-                stage('Linux') {
-                    echo "running linux schell script"
+            parallel 'sonar': {
+                stage('sonar') {
+                    echo "running sonar analysis"
                 }
-            }, 'windows': {
-                stage('Windows') {
-                    echo "running windows batch script"
+            }, 'security scan': {
+                stage('security scan') {
+                    echo "running security scan script"
                 }
             }
         }
