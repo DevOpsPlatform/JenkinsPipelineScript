@@ -16,10 +16,12 @@
 
     node {
       stage('security scan') {
+
           if (params.skipScan == 'true') {
-              err 'skipping security scanning, but this is mandatory, dont skip'
+              error('skipping security scanning, but this is mandatory, don't skip')
           } else {
               echo 'security scanning started....'
           }
       }
     }
+
