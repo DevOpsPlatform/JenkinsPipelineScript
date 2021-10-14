@@ -5,8 +5,9 @@
         agent any
 
         parameters{
-            string(name: 'skipSonar', defaultValue: 'true', description: '')
-            string(name: 'skipScan', defaultValue: 'true', description: '')
+            string(name: 'skipSonar', defaultValue: 'true', description: '') //you can use boolean/choice parameter also for this
+            
+            string(name: 'skipScan', defaultValue: 'true', description: '') //you can use boolean/choice parameter also for this
         }
         stages{
             stage('code checkout'){
@@ -54,9 +55,9 @@
 
 Build#3: Default values as per the script
 
-Build#4: skipSonar = true
+Build#4: skipSonar = false
 
-Build#5: skipSonar = true & skipScan = true
+Build#5: skipSonar = false & skipScan = false
 
 Output:
 
