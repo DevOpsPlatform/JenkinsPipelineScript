@@ -7,7 +7,7 @@
         stage("build"){
             echo "build stage"
         }
-        stage('Test') {
+        stage('code quality') {
             parallel 'sonar': {
                 stage('sonar') {
                     echo "running sonar analysis"
