@@ -1,6 +1,9 @@
 ### Script
 
     node{
+        stage("checkout"){
+            echo "code checkout stage"
+        }
         stage("build"){
             echo "build stage"
         }
