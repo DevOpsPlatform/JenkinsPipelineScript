@@ -1,4 +1,4 @@
-**Scripted Pipeline**
+**Scripted Pipeline Syntax**
 
     node{        
         stage(){
