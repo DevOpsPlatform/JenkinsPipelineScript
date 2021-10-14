@@ -11,7 +11,7 @@
                   echo 'security scanning started....'
               }
           }catch (exc) {
-                echo 'Something failed, I should sound the klaxons!'
+                echo 'Something failed!'
             }
       }
     }
