@@ -254,12 +254,12 @@ def removingDir(def path){
 
 }
 
-node("${params.nodeName}.colruyt.int"){
+node("${params.nodeName}"){
     stage("clean"){
 
         checkout scm
         
-        println "Hello...from stage ${params.nodeName}.colruyt.int" 
+        println "Hello...from stage ${params.nodeName}" 
         println "===================== Input Values ======================="
         println ("nodeName: ${params.nodeName}")
         println ("sizepath: ${params.sizepath}")
@@ -380,8 +380,8 @@ node("${params.nodeName}.colruyt.int"){
             """
         }
 
-        println "=======================Final Report on Jenkins node ${params.nodeName}.colruyt.int======================="
-        def emailBody = "=======================Final Report on Jenkins node ${params.nodeName}.colruyt.int=======================<br><br>"
+        println "=======================Final Report on Jenkins node ${params.nodeName}======================="
+        def emailBody = "=======================Final Report on Jenkins node ${params.nodeName}=======================<br><br>"
         
 
         echo "-----------------------------Input Values------------------------------"
@@ -565,9 +565,9 @@ node("${params.nodeName}.colruyt.int"){
             }
             emailBody = emailBody + "------------------------------------------------------------------------<br><br>"
             
-            emailext attachmentsPattern: 'removedPaths.txt', body: emailBody, subject: "${env.JENKINS_URL} ${params.nodeName}.colruyt.int files removed", mimeType: 'text/html', from: "gitlab.info@colruytgroup.com", to: "venkatanarayanareddy.sykam@colruytgroup.com srikanthpraveen.puppala@colruytgroup.com praveenyadav.perugu@colruytgroup.com sarathkrishna.prasad@colruytgroup.com jyoti.sharma@colruytgroup.com aruna.sattupali@colruytgroup.com sreelekha.kovuri@colruytgroup.com"
+            emailext attachmentsPattern: 'removedPaths.txt', body: emailBody, subject: "${env.JENKINS_URL} ${params.nodeName} files removed", mimeType: 'text/html', from: "gitlab.info@colruytgroup.com", to: "EMAIL1@email.com email2@email.com"
         }else{
-            emailext body: emailBody, subject: "${env.JENKINS_URL} ${params.nodeName}.colruyt.int filesystem", mimeType: 'text/html', from: "gitlab.info@colruytgroup.com", to: "venkatanarayanareddy.sykam@colruytgroup.com"
+            emailext body: emailBody, subject: "${env.JENKINS_URL} ${params.nodeName}.colruyt.int filesystem", mimeType: 'text/html', from: "info@email.com", to: "toemail@email.com"
         }
     }
 }
