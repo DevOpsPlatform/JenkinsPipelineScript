@@ -565,9 +565,9 @@ node("${params.nodeName}"){
             }
             emailBody = emailBody + "------------------------------------------------------------------------<br><br>"
             
-            emailext attachmentsPattern: 'removedPaths.txt', body: emailBody, subject: "${env.JENKINS_URL} ${params.nodeName} files removed", mimeType: 'text/html', from: "gitlab.info@colruytgroup.com", to: "EMAIL1@email.com email2@email.com"
+            emailext attachmentsPattern: 'removedPaths.txt', body: emailBody, subject: "${env.JENKINS_URL} ${params.nodeName} files removed", mimeType: 'text/html', from: "info@email.com", to: "EMAIL1@email.com email2@email.com"
         }else{
-            emailext body: emailBody, subject: "${env.JENKINS_URL} ${params.nodeName}.colruyt.int filesystem", mimeType: 'text/html', from: "info@email.com", to: "toemail@email.com"
+            emailext body: emailBody, subject: "${env.JENKINS_URL} ${params.nodeName} filesystem", mimeType: 'text/html', from: "info@email.com", to: "toemail@email.com"
         }
     }
 }
