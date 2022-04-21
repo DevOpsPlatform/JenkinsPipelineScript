@@ -89,7 +89,7 @@ def getNodes(def space){
     
     if(!nodeDetails.isEmpty() && nodeDetails !=null){
         def body = getBody(nodeDetails,space)
-        emailext body: body, subject: "${env.JENKINS_URL} - Linux Jenkins Nodes details used more than ${space}% space and containers details", mimeType: 'text/html', from: "gitlab.info@colruytgroup.com", to: "venkatanarayanareddy.sykam@colruytgroup.com srikanthpraveen.puppala@colruytgroup.com praveenyadav.perugu@colruytgroup.com sarathkrishna.prasad@colruytgroup.com jyoti.sharma@colruytgroup.com aruna.sattupali@colruytgroup.com sreelekha.kovuri@colruytgroup.com"
+        emailext body: body, subject: "${env.JENKINS_URL} - Linux Jenkins Nodes details used more than ${space}% space and containers details", mimeType: 'text/html', from: "info@email.com", to: "user.one@email.com user2.email.com"
     }
 }
 
@@ -424,7 +424,7 @@ pipeline {
         failure {
             emailext body: '''${SCRIPT, template="groovy-html.template"}''', 
                     subject: "${env.JENKINS_URL} ${env.JOB_NAME} - Build # ${env.BUILD_NUMBER} - Failed", 
-                    mimeType: 'text/html', from: "gitlab.info@colruytgroup.com", to: "venkatanarayanareddy.sykam@colruytgroup.com srikanthpraveen.puppala@colruytgroup.com"
+                    mimeType: 'text/html', from: "info@email.com", to: "user.one@email.com user.two@email.com"
         }    
     }
 }
