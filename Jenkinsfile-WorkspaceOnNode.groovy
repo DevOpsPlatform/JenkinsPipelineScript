@@ -64,7 +64,7 @@ def getBody(def nodeDetails, def space){
         This is an auto-generated email from Jenkins job, please find more details at ${BUILD_URL}.
         <br><br><br>
         <br>
-        SDPOS(S3Y)
+        DevOps Team
     """
 
     return body
